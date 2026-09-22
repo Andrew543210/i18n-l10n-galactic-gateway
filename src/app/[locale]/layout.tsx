@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import Header from '@/components/Header';
 import '../globals.css';
 
 export default async function LocaleLayout({
@@ -11,7 +12,6 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     params: Promise<{ locale: string }>;
 }) {
-
     const { locale } = await params;
 
     if (!routing.locales.includes(locale as any)) {
@@ -22,9 +22,12 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-        <body className="antialiased bg-slate-950 text-slate-100">
+        <body className="antialiased bg-slate-950 text-slate-100 min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
-            {children}
+            <Header />
+            <div className="flex-1">
+                {children}
+            </div>
         </NextIntlClientProvider>
         </body>
         </html>
