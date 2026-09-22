@@ -1,0 +1,39 @@
+{
+  "Navigation": {
+    "home": "Destinations",
+    "about": "Mission & Science",
+    "changeLanguage": "Language"
+  },
+  "Hero": {
+    "badge": "Space Tourism 2026",
+    "title": "Your Portal to the Stars",
+    "subtitle": "Commercial spaceflight to Mars, the Moon, and Titan. Experience multi-planetary living today.",
+    "cta": "Book Expedition"
+  },
+  "Destinations": {
+    "title": "Available Space Flights",
+    "ticketsLeft": "{count, plural, =0 {Fully booked} =1 {Only 1 ticket left!} other {Only # tickets left!}}",
+    "flightDuration": "Flight duration: {days} days",
+    "nextLaunch": "Next launch",
+    "priceFrom": "Price from",
+    "bookButton": "Reserve Seat"
+  },
+  "Booking": {
+    "title": "Flight Booking Calculator",
+    "passengers": "Passengers",
+    "cabinClass": "Cabin Class",
+    "classOptions": {
+      "economy": "Standard Sleeping Pod",
+      "business": "Orbital Suite",
+      "vip": "Zero-G Luxury Penthouse"
+    },
+    "promoNote": "Use promo code <b>GALACTIC2026</b> for <highlight>15% discount</highlight> on lunar orbital trips.",
+    "subtotal": "Estimated Total",
+    "submit": "Confirm Reservation"
+  },
+  "Footer": {
+    "rights": "All space rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
