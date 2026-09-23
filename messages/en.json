@@ -2,6 +2,7 @@
   "Navigation": {
     "home": "Destinations",
     "about": "Mission & Science",
+    "cabinet": "Cabinet / Cart",
     "changeLanguage": "Language"
   },
   "Hero": {
@@ -27,9 +28,84 @@
       "business": "Orbital Suite",
       "vip": "Zero-G Luxury Penthouse"
     },
+    "promoCode": "Promo Code",
+    "promoPlaceholder": "Enter promo code (e.g. GALACTIC2026)",
+    "promoAppliedPlaceholder": "PROMO CODE APPLIED",
     "promoNote": "Use promo code <b>GALACTIC2026</b> for <highlight>15% discount</highlight> on lunar orbital trips.",
     "subtotal": "Estimated Total",
-    "submit": "Confirm Reservation"
+    "submit": "Apply",
+    "applied": "Applied ✓",
+    "addToCart": "Add to Cart",
+    "spinning": "Spinning...",
+    "validating": "Validating promo code & spinning discount...",
+    "promoSuccess": "Promo code GALACTIC2026 applied! You got {discount}% discount",
+    "promoError": "Invalid promo code",
+    "promoAlreadyUsed": "You have already used this promo code. Discount is applied!",
+    "addedToCartNotice": "Tickets added to Cart! Go to Cabinet to complete payment."
+  },
+  "About": {
+    "sectorBadge": "R&D Exploration Sector",
+    "title": "Mission & Science",
+    "stats": {
+      "launches": "Successful Launches",
+      "safety": "Safety Standard",
+      "outposts": "Planetary Outposts",
+      "travelers": "Space Travelers"
+    },
+    "pillarsTitle": "Core Research Fields",
+    "pillarsSubtitle": "Pioneering technologies making interplanetary life a daily reality.",
+    "pillars": {
+      "astrobiology": {
+        "title": "Astrobiology & Terraforming",
+        "desc": "Research into cultivating organic crops in Martian soil and engineering closed-loop ecosystems."
+      },
+      "quantum": {
+        "title": "Quantum Navigation Systems",
+        "desc": "Engineering ultra-precise sensors for communications and orientation in deep space."
+      },
+      "orbital": {
+        "title": "Autonomous Orbital Habitats",
+        "desc": "Constructing modular habitats with artificial gravity for long-duration human stay."
+      }
+    },
+    "roadmapTitle": "Mission Roadmap 2030",
+    "roadmap": {
+      "phase1Title": "Lunar Outpost Expansion",
+      "phase1Desc": "Opening permanent domes at Artemis Base.",
+      "phase2Title": "Mars Orbital Hub",
+      "phase2Desc": "Scheduled passenger flights Earth-Mars.",
+      "phase3Title": "Titan Deep Exploration",
+      "phase3Desc": "First floating scientific station in Titan atmosphere."
+    }
+  },
+  "Cabinet": {
+    "title": "My Cabinet & Cart",
+    "subtitle": "Manage your reservations and view your active space passes.",
+    "cartTitle": "Cart Items",
+    "cartEmpty": "Your cart is empty. Choose a trip on the homepage.",
+    "passengers": "Passengers:",
+    "discount": "Discount {percent}%",
+    "remove": "Remove",
+    "paymentTitle": "Payment Form",
+    "cardName": "Name on card",
+    "cardNumber": "Card number",
+    "expiry": "Expiry",
+    "cvc": "CVC",
+    "total": "Total:",
+    "payNow": "Pay Now",
+    "processing": "Processing...",
+    "paymentSuccess": "Payment successful! Tickets moved to \"My Tickets\", seat availability updated.",
+    "myTicketsTitle": "My Tickets",
+    "noTickets": "No purchased tickets yet.",
+    "paid": "Paid:",
+    "classLabel": "Class:",
+    "errors": {
+      "cardNameRequired": "Enter cardholder name",
+      "cardNumberInvalid": "Enter 16 card digits",
+      "expiryInvalid": "Format: MM/YY (e.g. 12/28)",
+      "expiryExpired": "Card has expired",
+      "cvcInvalid": "CVC must be 3 digits"
+    }
   },
   "Footer": {
     "rights": "All space rights reserved.",
