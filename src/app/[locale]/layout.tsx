@@ -1,8 +1,10 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { SpaceProvider } from '@/context/SpaceContext';
 import '../globals.css';
 
 export default async function LocaleLayout({
@@ -17,6 +19,7 @@ export default async function LocaleLayout({
     if (!routing.locales.includes(locale as any)) {
         notFound();
     }
+    setRequestLocale(locale);
 
     const messages = await getMessages();
 
@@ -24,10 +27,13 @@ export default async function LocaleLayout({
         <html lang={locale}>
         <body className="antialiased bg-slate-950 text-slate-100 min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
-            <Header />
-            <div className="flex-1">
-                {children}
-            </div>
+            <SpaceProvider>
+                <Header />
+                <div className="flex-1">
+                    {children}
+                </div>
+                <Footer />
+            </SpaceProvider>
         </NextIntlClientProvider>
         </body>
         </html>
